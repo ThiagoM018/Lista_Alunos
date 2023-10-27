@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Alunos</title>
+    <link rel="stylesheet" href="./entities/css/estilo.css">
+    
+</head>
+<body style=" background-image: url('./entities/img/ImgDeFundo.jpg')">
+    
+
+    <div id="container">
+        <h1>Lista De Alunos</h1>
+
+        <span>
+        <label for="">Nome:</label>
+        <input type="text" id="Nome">
+        </span>
+
+        <span>
+        <label for="">Idade:</label>
+        <input type="number" id="Idade">
+        </span>
+
+        <br>
+
+        <span>
+        <label for="">Nota:</label>
+        <input type="number" id="Nota">
+        </span>
+
+        <span>
+        <label for="">Matricula:</label>
+        <input type="number" id="Matricula">
+        </span>
+
+        <br><br>
+
+        <button onclick="Adicionar()">Adicionar</button>
+
+        <br><br>
+
+        <div id="Tabelas">
+        <div id="Alunos">
+
+            <h3>Lista Alunos</h3>
+            
+            <div class="Tabelas">
+
+                <p id="alunosId">  Id  <br /></p>
+                <p id="alunosNome"> Nome  <br /></p>
+
+            </div>
+
+        </div>
+
+        <div id="aprovados">
+
+            <h3>Alunos aprovados</h3>
+
+            <div class="Tabelas">
+
+                <p id="aprovadosNome"> Nome  <br /></p>
+                <p id="aprovadosNota"> Nota <br /></p>
+
+            </div>
+
+        </div>
+        </div>
+
+    </div>
+
+    <script src="entities/js/app.js"></script>
+</body>
+</html>
